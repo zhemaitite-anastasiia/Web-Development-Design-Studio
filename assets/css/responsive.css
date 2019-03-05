@@ -35,24 +35,29 @@
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
+
+    .mt-m{
+        margin-top: 30px !important;
+    }
     .title-work {
         width: 100%;
         transform: translateX(-50%) translateY(0);
         left: 50%;
         text-align: center;
         z-index: 3;
-        margin-top: 0;
+        bottom: 10%;
+
     }
 
     .title-work h2 {
         font-size: 25px;
         height: 30px;
-        margin-bottom: 10px
     }
 
     .social {
-        bottom: 40px;
-        left: 30px;
+        bottom: 10px;
+        transform: translateX(-50%);
+        left: 50%;
     }
 
     .swiper-pagination-fraction {
@@ -84,9 +89,15 @@
         padding-bottom: 40px;
     }
 
+    .bg {
+        height: 100%;
+        width: 100%;
+    }
+
     .copyright {
         display: none;
     }
+
     .next-page h3 a {
         font-family: 'Playfair Display', serif;
         color: #fff;
@@ -94,12 +105,13 @@
         font-size: 40px;
         font-style: italic;
     }
+
     .detailes h3 {
         font-size: 20px;
     }
 
-    .about-us-text p {
-        margin-top: 30px;
+    .detailes {
+        margin: 10px 0;
     }
 }
 
@@ -135,9 +147,11 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
     .copyright {
         display: none;
     }
+
     .next-page h3 a {
         font-family: 'Playfair Display', serif;
         color: #fff;
@@ -145,6 +159,7 @@
         font-size: 50px;
         font-style: italic;
     }
+
     .detailes h3 {
         font-size: 30px;
     }
@@ -182,9 +197,7 @@
         padding-top: 70px;
         padding-bottom: 70px;
     }
-    .copyright {
-        display: none;
-    }
+
     .next-page h3 a {
         font-family: 'Playfair Display', serif;
         color: #fff;
@@ -192,52 +205,21 @@
         font-size: 60px;
         font-style: italic;
     }
+
     .detailes h3 {
         font-size: 40px;
     }
 
     .about-us-text p {
-        margin-top: 50px;
+        margin-top: 40px;
     }
 }
 
 
 @media (min-width: 1200px) and (max-width: 3000px) {
-    .title-work h2 {
-       font-size: 80px;
-       height: 100px;
+    .title-work {
+        top: 50%;
+        margin-top: 30px;
     }
-
-    .social {
-        position: fixed;
-        bottom: 40px;
-        left: 50px;
-        z-index: 99;
-    }
-    .logo {
-        left: 40px;
-        top: 40px;
-    }
-
-  
-
-    .copyright {
-        right: 40px;
-        bottom: 40px;
-    }
-
-    .nav-burger {
-        top: 25px;
-    }
-    .copyright {
-        display: none;
-    }
-    .social a {
-        font-size: 16px;
-        color: #fff;
-        opacity: 1;
-        transition: all 0.2s ease;
-    }
- 
 
 }
